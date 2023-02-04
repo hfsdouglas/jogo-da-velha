@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./tic-tac-toe.component.sass']
 })
 export class TicTacToeComponent {
-
+  currentPlayer: string = 'O';
+  board:string [][] = [
+    ['', '', ''],
+    ['', '', ''],
+    ['', '', '']
+  ];
 }
