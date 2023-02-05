@@ -1,5 +1,5 @@
-<p>Jogador atual: {{ currentPlayer }}</p>
-<p>Vencedor: {{ winner }}</p>
+<p *ngIf="!winner">Jogador atual: {{ currentPlayer }}</p>
+<p *ngIf="winner">Vencedor: {{ winner }}</p>
 <p><button (click)="restart()">Reiniciar Partida</button></p>
 <table>
     <tr *ngFor="let row of [0, 1, 2]">
